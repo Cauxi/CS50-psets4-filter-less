@@ -1,1 +1,10 @@
-# CS50-psets4-filter-less
+# psets4-filter-less
+<strong>NOTE</strong>: Copying this data and using it for your submission will breach the academic honesty policy of CS50. Please make sure to understand the material and solve the problem yourself—it's worth it!
+
+<p>This is my solution to the CS50 "Filter (Less Comfortable)" problem set, implemented in C. You can find the full problem description <a href="https://cs50.harvard.edu/x/2024/psets/4/filter/less/">here</a>.</p>
+Problem Overview
+<p>In this problem set, I implemented a program that applies image filters (grayscale, sepia, reflection, and blur) to a BMP image. The program reads an image file, applies the selected filter, and writes the modified image to a new file.</p> <p>This solution was completed as part of <strong>CS50: Introduction to Computer Science</strong>. Uploading my solution to GitHub complies with CS50’s academic honesty policy. For additional clarification, you can refer to this <a href="https://www.reddit.com/r/cs50/comments/63235w/is_this_reasonable/">Reddit thread</a>.</p>
+Program Structure
+<ul> <li><strong>Input</strong>: The program takes an input BMP file and applies the selected filter.</li> <li><strong>Image Manipulation</strong>: The program supports four filters: <ul> <li>Grayscale</li> <li>Sepia</li> <li>Reflection</li> <li>Blur</li> </ul> </li> <li><strong>Output</strong>: The filtered image is written to a new BMP file.</li> </ul>
+Key Steps:
+<ol> <li><strong>Grayscale</strong>: Converts the image to grayscale by averaging the RGB values of each pixel and applying that average to all color channels.</li> <li><strong>Sepia</strong>: Converts the image to sepia by applying a formula that adjusts each RGB value to create a warm, brownish tone.</li> <li><strong>Reflection</strong>: Reflects the image horizontally by swapping pixels across the vertical axis.</li> <li><strong>Blur</strong>: Applies a box blur by averaging the color values of each pixel with its neighboring pixels.</li> <li><strong>File Handling</strong>: The program reads and writes BMP files, ensuring the correct format and structure is maintained.</li> </ol> <p>Note: This repository does not include any files provided by CS50, such as the BMP images or the Makefile.</p>
